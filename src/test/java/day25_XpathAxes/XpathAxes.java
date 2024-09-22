@@ -75,6 +75,8 @@ public class XpathAxes {
         List<WebElement> precedingsiblings = driver.findElements(By.xpath("//a[contains(text(), 'L&T')]/ancestor::tr/preceding-sibling::tr"));
         System.out.println("Number of preceding sibling nodes: " + precedingsiblings.size()); // 224
 
+        System.out.println(driver.getPageSource());
+
 
     }
 }
